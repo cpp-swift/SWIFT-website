@@ -1,30 +1,11 @@
 <footer id="footer">
     <!--Footer Button-->
-    <div class="container has-text-centered has-background-grey-darker" id="backtotop">
+    <!-- <div class="container has-text-centered has-background-grey-darker" id="backtotop">
         <a class="has-text-white" onclick="window.scroll(0,0)">BACK TO TOP</a>
-    </div>
+    </div> -->
     <!--Footer Main Section-->
     <div class="has-background-grey-darker">
         <div class="container columns">
-            <!--Name Section-->
-            <div class="column has-text-left-desktop has-text-centered-mobile">
-                <a href="{{site.url}}{{site.baseurl}}/#about">
-                    <div class="columns">
-                        <div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">
-                            <figure class="image is-64x64">
-                                <img class="is-rounded" src="{{site.author-image}}">
-                            </figure>
-                        </div>
-                        <div class="column is-marginless">
-                            <h5 class="has-text-grey-lighter">{{site.author-name}}</h5>
-                            <div class="content has-text-grey">
-                                <p>{{site.author-about | truncate: 75 }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
             <!--Link Section-->
             <div class="column has-text-white">
                 <h3>More Links</h3>
@@ -40,14 +21,39 @@
                 </li>
             </div>
 
-            <!--Blog-post Section-->
-            <div class="column has-text-white">
-                <h3>Recent Posts</h3>
-                {% for post in site.posts offset: 0 limit:3 %}
-                <li>
-                    <a href="{{post.url | absolute_url}}">{{post.title}}</a>
-                </li>
-                {% endfor %}
+            <div class="column has-text-white" id="contact">
+                <h3>Connect with us!</h3>
+                <br>
+                {% unless site.facebook_username == %}
+                <a href="http://www.facebook.com/{{site.facebook_username}}" target="_blank" class="has-text-black"><i class="fab fa-facebook"></i> Facebook</a>
+                {% endunless %}
+                {% unless site.twitter_username == %}
+                <a href="https://twitter.com/intent/user?screen_name={{site.twitter_username}}" target="_blank" class="has-text-black"><i class="fab fa-twitter"></i> Twitter</a>
+                {% endunless %}
+                {% unless site.instagram_username ==  %}
+                <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-black"><i class="fab fa-instagram"></i> Instagram</a>
+                {% endunless %}
+                {% unless site.linkedin_username ==  %}
+                <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                {% endunless %}
+                {% unless site.github_username ==  %}
+                <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-black"><i class="fab fa-github"></i> GitHub</a>
+                {% endunless %}
+                {% unless site.youtube_channel_id ==  %}
+                <a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank" class="has-text-black"><i class="fab fa-youtube"></i> YouTube</a>
+                {% endunless %}
+                {% unless site.reddit_username ==  %}
+                <a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank" class="has-text-black"><i class="fab fa-reddit"></i> Reddit</a>
+                {% endunless %}
+                {% unless site.behance_username ==  %}
+                <a href="http://www.behance.com/{{site.behance_username}}" target="_blank" class="has-text-black"><i class="fab fa-behance"></i> Behance</a>
+                {% endunless %}
+                {% unless site.dribbble_username ==  %}
+                <a href="http://www.dribbble.com/{{site.dribbble_username}}" target="_blank" class="has-text-black"><i class="fab fa-dribbble"></i> Dribble</a>
+                {% endunless %}
+                {% unless site.spotify_username ==  %}
+                <a href="http://open.spotify.com/user/{{site.spotify_username}}" target="_blank" class="has-text-black"><i class="fab fa-spotify"></i> Spotify</a>
+                {% endunless %}
             </div>
         </div>
     </div>

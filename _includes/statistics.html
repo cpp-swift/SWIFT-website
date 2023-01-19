@@ -1,0 +1,24 @@
+<section class="hero is-small has-text-centered has-background-white-ter" id="statistics">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h1 class="title is-size-1 has-text-weight-bold">
+                        Join us.
+                    </h1>
+                    <br>
+                    <div class="container columns is-centered">
+                        {% for item in site.data.statistics.statistics %}
+                        <div class="column">
+                            <h1 class="title is-size-1 is-uppercase has-text-weight-bold">
+                                {{item.number}}
+                            </h1>
+                            <p>{{item.name}}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

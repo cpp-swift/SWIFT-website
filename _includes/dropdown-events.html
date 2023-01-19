@@ -1,0 +1,19 @@
+<div class="navbar-item has-dropdown is-hoverable">
+    <a class="navbar-link">
+        EVENTS
+    </a>
+    <div class="navbar-dropdown has-background-black is-left">
+        {% for event in site.data.nav-events.links %}
+        {% unless event.url == '/' or event.url == '/404' or event.url == '/blog' %}
+        <a href="{{event.url | absolute_url}}"
+            class="navbar-item has-text-grey-light {% if page.url == event.url | absolute_url  %}is-active{% endif %}">
+            {{event.name}}
+        </a>
+        {% endunless %}
+        {% endfor %}
+        <!-- <hr class="navbar-divider">
+    <a class="navbar-item">
+      Report an issue
+    </a> -->
+    </div>
+</div>
