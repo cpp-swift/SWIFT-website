@@ -24,12 +24,15 @@
             <div class="navbar-end">
                 <a class="navbar-item {% if page.layout == 'index' %}is-active{% endif %}"
                     href="{% if page.layout == 'index' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
-               
+
                 {% include dropdown-about.html %}
                 {% include dropdown-events.html %}
 
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#contact">CONTACT</a>
-                <a class="navbar-item button is-success" href="{{site.url}}{{site.baseurl}}/join">BECOME A MEMBER</a>
+                <div style="display: flex; align-items: center">
+                    <a class="navbar-item button is-success" href="{{site.url}}{{site.baseurl}}/join">BECOME A
+                        MEMBER</a>
+                </div>
             </div>
 
         </div>

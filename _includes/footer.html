@@ -8,56 +8,75 @@
         <div class="container columns">
             <!--Link Section-->
             <div class="column has-text-white">
-                <h3>More Links</h3>
+                <h3>Email us your question</h3>
+                <a id="contact-button" href="mailto:{{site.email}}"
+                    class="button is-info is-rounded is-uppercase has-text-weight-normal has-text-weight-semibold column has-text-white"
+                    target="_blank">
+                    <p><i class="fas fa-envelope"></i> Send us an Email</p>
+                </a>
                 {% for sitepage in site.html_pages offset: 4 %}
-                {% unless sitepage.url == '/'  limit: 2 %}
+                {% unless sitepage.url == '/' limit: 2 %}
                 <li>
                     <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
                 </li>
                 {% endunless %}
                 {% endfor %}
-                <li>
+                <!-- <li>
                     <a target="_blank" href="{{site.url}}{{site.baseurl}}/feed.xml">Subscribe via RSS</a>
-                </li>
+                </li> -->
             </div>
 
             <div class="column has-text-white" id="contact">
-                <h3>Connect with us!</h3>
+                <h3>... or connect with us on our social media!</h3>
                 <br>
                 {% unless site.facebook_username == %}
-                <a href="http://www.facebook.com/{{site.facebook_username}}" target="_blank" class="has-text-black"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="http://www.facebook.com/{{site.facebook_username}}" target="_blank" class="has-text-white"><i
+                        class="fab fa-facebook"></i> Facebook</a>
                 {% endunless %}
                 {% unless site.twitter_username == %}
-                <a href="https://twitter.com/intent/user?screen_name={{site.twitter_username}}" target="_blank" class="has-text-black"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://twitter.com/intent/user?screen_name={{site.twitter_username}}" target="_blank"
+                    class="has-text-white"><i class="fab fa-twitter"></i> Twitter</a>
                 {% endunless %}
-                {% unless site.instagram_username ==  %}
-                <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-black"><i class="fab fa-instagram"></i> Instagram</a>
+                {% unless site.instagram_username == %}
+                <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-white"><i
+                        class="fab fa-instagram"></i> Instagram</a>
                 {% endunless %}
-                {% unless site.linkedin_username ==  %}
-                <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                {% unless site.linkedin_username == %}
+                <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank"
+                    class="has-text-white"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 {% endunless %}
-                {% unless site.github_username ==  %}
-                <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-black"><i class="fab fa-github"></i> GitHub</a>
+                {% unless site.github_username == %}
+                <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-white"><i
+                        class="fab fa-github"></i> GitHub</a>
                 {% endunless %}
-                {% unless site.youtube_channel_id ==  %}
-                <a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank" class="has-text-black"><i class="fab fa-youtube"></i> YouTube</a>
+                {% unless site.youtube_channel_id == %}
+                <a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank"
+                    class="has-text-white"><i class="fab fa-youtube"></i> YouTube</a>
                 {% endunless %}
-                {% unless site.reddit_username ==  %}
-                <a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank" class="has-text-black"><i class="fab fa-reddit"></i> Reddit</a>
+                {% unless site.reddit_username == %}
+                <a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank" class="has-text-white"><i
+                        class="fab fa-reddit"></i> Reddit</a>
                 {% endunless %}
-                {% unless site.behance_username ==  %}
-                <a href="http://www.behance.com/{{site.behance_username}}" target="_blank" class="has-text-black"><i class="fab fa-behance"></i> Behance</a>
+                {% unless site.behance_username == %}
+                <a href="http://www.behance.com/{{site.behance_username}}" target="_blank" class="has-text-white"><i
+                        class="fab fa-behance"></i> Behance</a>
                 {% endunless %}
-                {% unless site.dribbble_username ==  %}
-                <a href="http://www.dribbble.com/{{site.dribbble_username}}" target="_blank" class="has-text-black"><i class="fab fa-dribbble"></i> Dribble</a>
+                {% unless site.dribbble_username == %}
+                <a href="http://www.dribbble.com/{{site.dribbble_username}}" target="_blank" class="has-text-white"><i
+                        class="fab fa-dribbble"></i> Dribble</a>
                 {% endunless %}
-                {% unless site.spotify_username ==  %}
-                <a href="http://open.spotify.com/user/{{site.spotify_username}}" target="_blank" class="has-text-black"><i class="fab fa-spotify"></i> Spotify</a>
+                {% unless site.spotify_username == %}
+                <a href="http://open.spotify.com/user/{{site.spotify_username}}" target="_blank"
+                    class="has-text-white"><i class="fab fa-spotify"></i> Spotify</a>
                 {% endunless %}
             </div>
         </div>
     </div>
     <div class="has-background-black has-text-centered has-text-white" id="credits">
-        <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} | <a href="https://github.com/thedevslot/WhatATheme" target="_blank" rel="noopener noreferrer">WhatATheme</a> - A Theme made with <i class="fas fa-heart has-text-danger"></i> by <a href="https://www.twitter.com/thedevslot" target="_blank" rel="noopener noreferrer">TheDevsLot</a> Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+        <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} | <a href="https://github.com/thedevslot/WhatATheme"
+            target="_blank" rel="noopener noreferrer">WhatATheme</a> - A Theme made with <i
+            class="fas fa-heart has-text-danger"></i> by <a href="https://www.twitter.com/thedevslot" target="_blank"
+            rel="noopener noreferrer">TheDevsLot</a> Powered by <a href="https://jekyllrb.com/"
+            target="_blank">Jekyll</a>
     </div>
 </footer>
