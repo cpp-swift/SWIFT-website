@@ -4,7 +4,7 @@ markdown: kramdown
 # URL of the Site
 url: ''
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl: 
+baseurl: ''
 
 # Title of the Site
 title: SWIFT
@@ -15,7 +15,7 @@ site-image: /WhatATheme/assets/images/meta.jpg
 # Keywords of the Site
 site-keywords: Site, Template, Theme
 # URL for the Image of custom Favicon
-favicon-url: assets/favicons/favicon.ico
+favicon-url: /assets/favicons/favicon.ico
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
 heroimage: https://cdn.discordapp.com/attachments/944043541645107220/951651377833181265/bg.jpg
@@ -68,10 +68,13 @@ permalink: "blog/:title"
 compress_html:
   clippings: all
 
+
+include:
+  - _pages
 # Defaults
 defaults:
-  -
-    scope:
+  - scope:
+      path: "_posts"
       type: 'posts'
     values:
       layout: post
@@ -79,12 +82,12 @@ defaults:
       description: ""
       tags:
         - ""
-  -
-    scope:
+  - scope:
+      path: _pages
       type: 'pages'
     values:
       layout: page
-
+      permalink: /:basename/ # make URL of pages in the folder _pages as on the root.
 # Exclude
 exclude:
   - .sass-cache/
