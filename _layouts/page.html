@@ -8,16 +8,23 @@ layout: compress
 
 <body>
     {% include navbar.html %}
-    <section class="hero is-fullheight">
+    <section class="hero is-medium">
         <div class="hero-body">
-            <div class="container has-text-centered" id="page-section">
+            <!-- This is to skip a line without using <br> -->
+            <div style="margin-top: 1rem;"></div> 
+            <h1 class="title is-1 is-uppercase has-text-weight-bold has-text-centered">
+                {{page.title}}
+            </h1>
+        </div>
+    </section>
+    <section class="hero is-halfheight has-background-black-ter">
+        <div class="hero-body">
+            <div class="container " id="page-section">
                 <div class="section">
-                    <h1 class="title is-1 is-uppercase has-text-weight-bold">
-                        {{page.title}}
-                    </h1>
-                    <hr class="has-background-black">
-                    <div class="content is-marginless">
-                        {{ content }}
+                    <div class="columns">
+                        <div class="content column">
+                            {{content}}
+                        </div>
                     </div>
                 </div>
             </div>
