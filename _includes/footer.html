@@ -14,13 +14,13 @@
                     target="_blank">
                     <p><i class="fas fa-envelope"></i> Send us an Email</p>
                 </a>
-                {% for sitepage in site.html_pages offset: 4 %}
+                <!-- {% for sitepage in site.html_pages offset: 4 %}
                 {% unless sitepage.url == '/' limit: 2 %}
                 <li>
                     <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
                 </li>
                 {% endunless %}
-                {% endfor %}
+                {% endfor %} -->
                 <!-- <li>
                     <a target="_blank" href="{{site.url}}{{site.baseurl}}/feed.xml">Subscribe via RSS</a>
                 </li> -->
@@ -73,10 +73,11 @@
         </div>
     </div>
     <div class="has-background-black has-text-centered has-text-white" id="credits">
-        <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} | <a href="https://github.com/thedevslot/WhatATheme"
+        <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} | SWIFT
+        <!-- <a href="https://github.com/thedevslot/WhatATheme"
             target="_blank" rel="noopener noreferrer">WhatATheme</a> - A Theme made with <i
             class="fas fa-heart has-text-danger"></i> by <a href="https://www.twitter.com/thedevslot" target="_blank"
             rel="noopener noreferrer">TheDevsLot</a> Powered by <a href="https://jekyllrb.com/"
-            target="_blank">Jekyll</a>
+            target="_blank">Jekyll</a> -->
     </div>
 </footer>

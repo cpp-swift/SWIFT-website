@@ -1,4 +1,5 @@
 title: All kinds of events. All the time.
+columns: 2
 descriptions:
   - title: Weekly Workshops
     description:
@@ -24,3 +25,10 @@ descriptions:
       technology.
     link: https://techsymposium.calpolyswift.org/
     link-text: Check it out
+  - title: SWIFT Pals
+    description:
+      Come to our weekly meetings where we present and discuss topics focused in
+      cybersecurity, networking, system administration, and automation. We invite
+      students
+      in the field to give our members an insight to the professional world of
+      technology.
