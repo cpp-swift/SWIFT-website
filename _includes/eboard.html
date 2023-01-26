@@ -1,0 +1,48 @@
+<div class="columns">
+    <div class="column is-8 is-offset-2">
+        <div class="box has-text-centered">
+            <h1 class="title is-1">
+                Eboard {{site.data.eboard.year}}
+            </h1>
+            <!-- <div class="control">
+                <label class="radio">
+                    <input type="radio" name="filter" value="All" onchange="getValue(this)" checked>
+                    All
+                </label>
+                <label class="radio">
+                    <input type="radio" name="filter" value="Operations" onchange="getValue(this)">
+                    Operations
+                </label>
+                <label class="radio">
+                    <input type="radio" name="filter" value="Internal" onchange="getValue(this)">
+                    Internal
+                </label>
+                <label class="radio">
+                    <input type="radio" name="filter" value="External" onchange="getValue(this)">
+                    External
+                </label>
+            </div> -->
+        </div>
+        <div class="eboard-grid">
+            {% for position in site.data.eboard.eboard %}
+            <div class="eboard">
+                <div class="card has-text-centered ">
+                    <div class="card-header">
+                        <p class="card-header-title is-centered is-size-4">{{position.position}}</p>
+                    </div>
+                    <div class="card-content">
+                        <img src="/assets/images/eboard/{{position.holder}}.jpg" alt="{{position.holder}}">
+                        <div class="content">
+                            <p>{{position.holder}}</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{position.linkedin}}" target="_blank" class="card-footer-item has-text-black"><i
+                                class="fab fa-linkedin fa-3x"></i></a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

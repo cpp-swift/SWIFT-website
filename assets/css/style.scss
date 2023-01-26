@@ -1,6 +1,5 @@
 ---
 ---
-
 @import "main.scss";
 
 #navbar {
@@ -96,7 +95,7 @@ a.navbar-item.is-active {
         margin: auto 0.75vmax;
 
         &:hover {
-            transform: scale(1.10);
+            transform: scale(1.30);
             filter: opacity(0.75);
         }
     }
@@ -356,10 +355,24 @@ a.navbar-item.is-active {
 
 }
 
-.title {
+.title.with-margin {
     padding-bottom: 1rem;
 }
 
 #page-header {
     margin-top: 1rem;
+}
+
+.eboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    // grid-auto-rows: 1fr
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.eboard {
+    margin: 1rem;
 }
