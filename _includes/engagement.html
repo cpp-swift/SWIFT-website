@@ -16,9 +16,9 @@
                             {% assign off = height | times: i %}
                             {% for event in site.data.engagement.descriptions limit: height offset: off %}
                             <div class="tile is-child box">
-                                <h2 class="title is-size-2 has-text-weight-bold">
+                                <h1 class="title with-margin is-size-2 has-text-weight-bold">
                                     {{ event.title }}
-                                </h2>
+                                </h1>
                                 <p>
                                     {{ event.description }}
                                 </p>

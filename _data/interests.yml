@@ -1,31 +1,23 @@
-title: Learn with us.
+title: A community of learners.
 columns: 2
 descriptions:
-  - title: System Adminisration
+  - title: System Administration
     description:
-      Come to our weekly meetings where we present and discuss topics focused in
-      cybersecurity, networking, system administration, and automation. We invite
-      students
-      in the field to give our members an insight to the professional world of
-      technology.
+      Explore the nitty gritty details of securing and maintaining computer systems and networks. 
+      From Linux and Windows basics to monitoring network infrastructure, we cover it all. 
+      Join us as we explore using various operating systems, virtual infrastructure, and scripting to automate tasks. 
   - title: Computer Networking
-    description:
-      Come to our weekly meetings where we present and discuss topics focused in
-      cybersecurity, networking, system administration, and automation. We invite
-      students
-      in the field to give our members an insight to the professional world of
-      technology.
+    description: 
+      From a single packet to routing and switching a network, a solid understanding of computer
+      networking is essential for future cybersecurity professionals. Join us as we learn the fundamentals of computer networking, 
+      and lay the foundation for a successful career in the field.
   - title: Offensive Security
     description:
-      Come to our weekly meetings where we present and discuss topics focused in
-      cybersecurity, networking, system administration, and automation. We invite
-      students
-      in the field to give our members an insight to the professional world of
-      technology.
-  - title: Digital Forensics
+      Understanding how attackers think and operate is crucial in effectively defending against cyber attacks. It's also
+      just fun to hack stuff.
+      Join us as we explore topics such as penetration testing, offensive security tools and frameworks, and offensive security consulting.
+  - title: Incident Response
     description:
-      Come to our weekly meetings where we present and discuss topics focused in
-      cybersecurity, networking, system administration, and automation. We invite
-      students
-      in the field to give our members an insight to the professional world of
-      technology.
+      Learn about the tools used in digital forensics, incident response, and threat hunting. Understanding how to identify
+      and respond to cyber attacks is crucial in effectively defending against them. 
+      Join us as we delve into the world of threat detection, log analysis, and incident management.
