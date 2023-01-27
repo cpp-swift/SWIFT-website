@@ -23,7 +23,11 @@
                                 </div>
                                 <div class="card-image">
                                     <figure class="image">
+                                        {% if event.image %}
+                                        <img src="{{event.image}}" alt="{{event.title}}">
+                                        {% else %}
                                         <img src="https://via.placeholder.com/800x400" alt="Placeholder image">
+                                        {% endif %}
                                     </figure>
                                 </div>
                                 <div class="card-content">
