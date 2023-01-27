@@ -376,3 +376,29 @@ a.navbar-item.is-active {
 .eboard {
     margin: 1rem;
 }
+
+$collapse-transition-speed: .2s !default;
+$collapse-transition-style: ease !default;
+$message-body-padding: 1.25em 1.5em !default;
+
+.is-collapsible {
+    height: 0;
+    overflow-y: hidden;
+    transition: height $collapse-transition-speed $collapse-transition-style;
+
+    &.is-active {
+        transition: height $collapse-transition-speed $collapse-transition-style;
+    }
+
+    &::hover {
+        filter: opacity(0.75);
+    }
+
+    .message-body {
+        padding: 0 !important;
+        max-height: 0;
+        .message-body-content {
+            padding: $message-body-padding;
+        }
+    }
+}
