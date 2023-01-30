@@ -7,14 +7,17 @@
                         What is RvB?
                     </h1>
                     <p>
-                        Red vs. Blue (RvB) is SWIFT's semesterly cybersecurity competition which teaches skills in IT, 
+                        In SWIFT's Red vs. Blue (RvB), you and up to 3 teammates battle for control of your own network.
+                    </p>
+                    <p>
+                        Configure firewalls, patch software, and implement other security measures to block an active
+                        red team from taking down your servers and services.
+                    </p>
+                    <p>
+                        SWIFT's semesterly cybersecurity competition teaches skills in IT,
                         system administration, business, and much more. In RvB, participants take the
                         seat of an incident response team responsible for defending a company's network of computers
-                        against a real-time threat. This includes configuring firewalls, patching software, and
-                        implementing other security measures. The goal of the competition is to provide participants
-                        with practical experience in identifying
-                        and defending against cyber threats, and to help improve incident response and incident
-                        management skills.
+                        against a real-time threat. 
                     </p>
                 </div>
                 <div class="column">
@@ -25,11 +28,11 @@
             </div>
             {% assign today_date = 'now' | date: '%s' %}
             {% assign eventdate = site.data.rvb.eventdate | date: '%s' %}
-            {% if site.data.rvb.signuplink and today_date < eventdate %} 
-            <a href="{{ site.data.rvb.signuplink }}" class="button is-large is-info is-rounded is-uppercase has-text-weight-normal is-fullwidth">
+            {% if site.data.rvb.signuplink and today_date < eventdate %} <a href="{{ site.data.rvb.signuplink }}"
+                class="button is-large is-info is-rounded is-uppercase has-text-weight-normal is-fullwidth">
                 Sign up!
-            </a>
-            {% endif %}
+                </a>
+                {% endif %}
         </div>
         <div class="box">
             <h1 class="title with-margin is-1 has-text-centered">
@@ -40,22 +43,30 @@
                 and completing various
                 business tasks from management. After sign-ups close, all teams will receive a briefing packet that
                 includes important details about
-                a fictional business and the network you are responsible for. The team with the most points at the end 
+                a fictional business and the network you are responsible for. The team with the most points at the end
                 wins!
             </p>
             <p>
-                <strong>Service Uptime:</strong> RvB mocks a real business. Keeping your business servers and the services they host
-                up and operational is important. Your team earns points every few minutes for each service you keep functional. An automated
-                scoring engine will automatically poll the core functionallity of each of your business-critical services. The scoring engine
+                <strong>Service Uptime:</strong> RvB mocks a real business. Keeping your business servers and the
+                services they host
+                up and operational is important. Your team earns points every few minutes for each service you keep
+                functional. An automated
+                scoring engine will automatically poll the core functionallity of each of your business-critical
+                services. The scoring engine
                 will have a scoring portal for you to view the status of your teams services.
-                But be careful! If you accidentally cause a service to become unoperational or if the red team takes makes
+                But be careful! If you accidentally cause a service to become unoperational or if the red team takes
+                makes
                 a service no longer fit for business, that service won't earn you points!
             </p>
             <p>
-                <strong>Injects:</strong> Your main business task is to keep your services operational. However, throughout the competition, 
-                your team will receive additional business tasks, called <em>injects</em>. The business that hired you may ask you to complete
-                technical tasks like setting up a new service, or ask for business documents like an inventory report of the network.
-                Completing injects will reward you with lots of points, but make sure to do it before the deadline or no points for you.
+                <strong>Injects:</strong> Your main business task is to keep your services operational. However,
+                throughout the competition,
+                your team will receive additional business tasks, called <em>injects</em>. The business that hired you
+                may ask you to complete
+                technical tasks like setting up a new service, or ask for business documents like an inventory report of
+                the network.
+                Completing injects will reward you with lots of points, but make sure to do it before the deadline or no
+                points for you.
             </p>
         </div>
         <div class="box">
@@ -70,6 +81,11 @@
             <p>
                 Since its inception, past competitors, alumni, and other volunteers have joined the team to share their
                 professional experiences with participants and continue to make RvB better.
+            </p>
+            <p>
+                The goal of the competition is to provide participants
+                with practical experience in identifying and defending against cyber threats, and to help
+                improve incident response and incident management skills.
             </p>
         </div>
     </div>
