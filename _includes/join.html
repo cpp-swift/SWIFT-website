@@ -1,59 +1,46 @@
-<section class="hero is-halfheight has-background-grey" id="interests">
-    <div class="hero-body">
-        <div class="container">
+<div class="columns">
+    <div class="column is-8 is-offset-2">
+        {% for section in site.data.join.descriptions %}
+        <div class="box">
+            <h1 class="title with-margin is-1 has-text-centered">
+                {{ section.title }}
+            </h1>
+            {% if section.image %}
             <div class="columns">
                 <div class="column">
-                    <h1 class="title is-size-1 has-text-centered has-text-weight-bold has-text-white-bis">
-                        {{ site.data.join.title }}
-                    </h1>
-                    <br>
-                    {% assign columns = site.data.join.columns %}
-                    {% assign height = site.data.join.descriptions.size | divided_by: columns %}
-                    {% assign iter = columns|minus: 1 %}
-                    <div class="tile is-ancestor">
-                        {% for i in (0..iter) %}
-                        <div class="tile is-vertical is-parent">
-                            {% assign off = height | times: i %}
-                            {% for event in site.data.join.descriptions limit: height offset: off %}
-                            <div class="tile is-child card">
-                                <div class="card-header">
-                                    <h2 class="card-header-title is-size-2 has-text-weight-bold">
-                                        {{ event.title }}
-                                    </h2>
-                                </div>
-                                <div class="card-image">
-                                    <figure class="image">
-                                        {% if event.image %}
-                                        <img src="{{event.image}}" alt="{{event.title}}">
-                                        {% else %}
-                                        <!-- <img src="https://via.placeholder.com/800x400" alt="Placeholder image"> -->
-                                        {% endif %}
-                                    </figure>
-                                </div>
-                                <div class="card-content">
-                                    <div class="content">
-                                        <p>
-                                            {{ event.description }}
-                                        </p>
-                                        {% if event.link %}
-                                <a href="{{ event.link }}"
-                                    class="button is-medium is-info is-rounded is-uppercase has-text-weight-normal">
-                                    {% if event.link-text %}
-                                    {{ event.link-text }}
-                                    {% else %}
-                                    See more
-                                    {% endif %}
-                                </a>
-                                {% endif %}
-                                    </div>
-                                </div>
-                            </div>
-                            {% endfor %}
-                        </div>
+                    <figure class="image">
+                        <img src="{{section.image}}" alt="{{section.title}}">
+                    </figure>
+                </div>
+                <div class="column">
+                    {% endif %}
+                    <p>
+                        {{ section.description }}
+                        {% if section.list %}
+                    <ul>
+                        {% for item in section.list %}
+                        <li>{{item.item}}</li>
                         {% endfor %}
+                    </ul>
+                    {% endif %}
+                    </p>
+                    {% if section.link %}
+                    <div class="is-centered">
+                        <a href="{{ section.link }}"
+                            class="button is-medium is-info is-rounded is-uppercase has-text-weight-normal">
+                            {% if section.link-text %}
+                            {{ section.link-text }}
+                            {% else %}
+                            See more
+                            {% endif %}
+                        </a>
                     </div>
+                    {% endif %}
+            {% if section.image %}
                 </div>
             </div>
+            {% endif %}
         </div>
+        {% endfor %}
     </div>
-</section>
+</div>

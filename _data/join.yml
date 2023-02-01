@@ -1,25 +1,41 @@
-title: very epic
+title:
 columns: 2
 descriptions:
   - title: Become a Member!
+    description: SWIFT helps bridge college to career, with plenty of ways to engage!
+  - title: Free Membership Benefits
     description:
-      SWIFT is a way of moving your college career to the next level. Joining is a three step process, but it should not take more then 10 minutes. 
-      Membership allows you to participate in events and competitions, vote in elections and much more! With the help of our club resources, you 
-      can make your mark on the cyber security field. Join us and meet other students that are talented and passionate about cybersecurity. 
-      Membership is per year and is available to all Cal Poly Students and active Cal State Students of any major. Membership lasts for the entire 
-      academic year.
-  - title: Membership Benefits
-    description:
-      Community, Events, and Free merch!
+      "SWIFT requires NO payment to become a member of SWIFT. All you have to do is show up!
+      Join us and meet other students that are talented and passionate about cybersecurity. 
+      SWIFT is open to all Cal Poly students and students of any major, background, or interest.
+      As a free member, benefits include:"
+    list:
+      - item: Immediate access to SWIFT's events
+      - item: Immediate access to SWIFT's community 
+      - item: Qualify for free merch at events
     image: /assets/images/community.jpg
+  - title: Paid Membership Benefits
+    description:
+      "Membership can be purchased for the entire academic year or a single semester.
+      Being a paid member gives you exclusive benefits that showcase your support of SWIFT.
+      These benefits include:"
+    list:
+      - item: Exclusive T-Shirts, Stickers, Webcam Covers & Other Goodies!
+      - item: Paid Members will enter in raffles & giveaways.
+      - item: Qualify for Prizes during CTF Competitions & Events.
+      - item: "Mentorship Program: 1-on-1 with Industry Professional*"
+      - item: Certification Reimbursement (TBD)*
+      - item: And more!
+    link: https://www.eventbrite.com/e/swift-spring-2023-paid-membership-registration-523782135467
+    link-text: Buy Now
   - title: SWIFT Pals
     description:
       SWIFT Pals is a unique mentorship program with a focus on community building that
-      pairs groups of general members with mentors in the cybersecurity field. Throughout the 
-      semester, the Pals will have opportunities to learn about cybersecurity concepts, network 
-      with other students and professionals, and compete in various competitions including SWIFT's 
-      own RvB, Hivestorm, NCL under the guidance of their mentors. You do not have to be a paid member to apply for pals. 
+      pairs groups of general members with mentors in the cybersecurity field. Throughout the
+      semester, the Pals will have opportunities to learn about cybersecurity concepts, network
+      with other students and professionals, and compete in various competitions including SWIFT's
+      own RvB, Hivestorm, NCL under the guidance of their mentors.
+      You do not have to be a paid member to apply for Pals.
     image: /assets/images/pals.png
     link: https://docs.google.com/forms/d/e/1FAIpQLScgcsnL_4e1BHDvJ8rFd2Q13pHSroYPkFFfvHO2C1PzkRFbWw/viewform
-  - title: How to become a paid member
-    link: https://membership.calpolyswift.org/
+    link-text: Sign up

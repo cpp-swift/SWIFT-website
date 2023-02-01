@@ -1,5 +1,5 @@
 ---
 layout: page
-title: Join the SWIFT Community!
+title: Join SWIFT
 ---
 {% include join.html %}
