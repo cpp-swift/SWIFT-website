@@ -416,3 +416,9 @@ $message-body-padding: 1.25em 1.5em !default;
     width: 100%;
     height: 100%;
 }
+
+#interests {
+    .card-header-title {
+        justify-content: center;
+    }
+}
