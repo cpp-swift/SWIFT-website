@@ -6,22 +6,22 @@ descriptions:
       Explore the nitty gritty details of securing and maintaining computer systems and networks. 
       From Linux and Windows basics to monitoring network infrastructure, we cover it all. 
       Join us as we explore using various operating systems, virtual infrastructure, and scripting to automate tasks. 
-    image: /assets/images/workshop.jpg
+    image: /assets/images/homepage/workshop.jpg
   - title: Computer Networking
     description: 
       From a single packet to routing and switching a network, a solid understanding of computer
       networking is essential for future cybersecurity professionals. Join us as we learn the fundamentals of computer networking, 
       and lay the foundation for a successful career in the field.
-    image: /assets/images/networking.jpg
+    image: /assets/images/homepage/networking.jpg
   - title: Offensive Security
     description:
       Understanding how attackers think and operate is crucial in effectively defending against cyber attacks. It's also
       just fun to hack stuff.
       Join us as we explore topics such as penetration testing, offensive security tools and frameworks, and offensive security consulting.
-    image: /assets/images/offensive.jpg
+    image: /assets/images/homepage/offensive.jpg
   - title: Incident Response
     description:
       Learn about the tools used in digital forensics, incident response, and threat hunting. Understanding how to identify
       and respond to cyber attacks is crucial in effectively defending against them. 
       Join us as we delve into the world of threat detection, log analysis, and incident management.
-    image: /assets/images/incident-response.jpg
+    image: /assets/images/homepage/incident-response.jpg

@@ -35,6 +35,11 @@
                         <div class="content">
                             <p>{{position.holder}}</p>
                         </div>
+                        {% if position.branch %}
+                        <div class="content">
+                            <p>Branch: {{position.branch}}</p>
+                        </div>
+                        {% endif %}
                     </div>
                     <div class="card-footer">
                         <a href="{{position.linkedin}}" target="_blank" class="card-footer-item has-text-black"><i

@@ -3,63 +3,56 @@ eboard:
   - position: President
     holder: Taylor Nguyen
     linkedin: https://www.linkedin.com/in/taylorsnguyen/
-    image: /assets/images/eboard/GabrielFok.jpg
+    branch: President
   - position: Vice President of Operations
     holder: Gabriel Fok
     linkedin: https://www.linkedin.com/in/gabriel-fok/
-    image: /assets/images/eboard/GabrielFok.jpg
     branch: Operations
   - position: Vice President of Internal
     holder: Jessica Leung
     linkedin: https://www.linkedin.com/in/jessicacleung/
-    image: 
     branch: Internal
   - position: Vice President of External
     holder: Jasmine Weddle
     linkedin: https://www.linkedin.com/in/jasmine-m-weddle/
-    image: 
     branch: External
   - position: Treasurer
     holder: Felipe Aceves
     linkedin: https://www.linkedin.com/in/felipe-aceves-484044217/
-    image: 
+    branch: Treasurer
   - position: Directory of Academy
     holder: Bryant Hernandez
     linkedin: https://www.linkedin.com/in/bryant-hernandez-8b6519167/
-    image: 
-    branch: Operaetions
+    branch: Operations
   - position: Director of Red vs Blue
     holder: Clemence Yi
     linkedin: https://www.linkedin.com/in/clemence-jun-yi/
-    image: 
     branch: Operations
   - position: Co-Director of Membership
     holder: Jacob Jayme
     linkedin: https://www.linkedin.com/in/jacobjayme/
-    image: 
     branch: Internal
   - position: Co-Director of Membership
     holder: Karina Rivera
     linkedin: https://www.linkedin.com/in/karina-g-rivera/
-    image: 
     branch: Internal
   - position: Director of Marketing
     holder: Derrick Tran
     linkedin: https://www.linkedin.com/in/derrickttran/
-    image: 
     branch: Internal
+  - position: Graphic Designer
+    holder: Alessandra Gonzalez
+    linkedin: https://www.linkedin.com/in/alessandra-gonzalez/
+    branch: Internal
+  - position: Tech Symposium Chair
+    holder: Jason Phan
+    linkedin: https://www.linkedin.com/in/jasonphan03/
+    branch: External
   - position: Community Outreach Coordinator
     holder: Sydney Duong
     linkedin: https://www.linkedin.com/in/sydneylduong/
-    image: 
     branch: External
   - position: Alumni Relations Coordinator
     holder: Meghan Nguyen
     linkedin: https://www.linkedin.com/in/meghannguyen/
-    image: 
-    branch: External
-  - position: Tech Symposium Chair
-    holder: Jason Phan
-    linkedin: https://www.linkedin.com/in/jasonphan03/
-    image: 
     branch: External
