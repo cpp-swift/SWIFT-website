@@ -2,7 +2,9 @@ title:
 columns: 2
 descriptions:
   - title: Become a Member!
-    description: SWIFT helps bridge college to career, with plenty of ways to engage!
+    description: SWIFT helps bridge college to career, with plenty of ways to engage! How can you join? Just join our Discord and start coming to our in-person meetings! That's all it takes!
+    link: https://discord.calpolyswift.org
+    link-text: Join the Discord
   - title: Free Membership Benefits
     description:
       "SWIFT requires NO payment to become a member of SWIFT. All you have to do is show up!
@@ -20,6 +22,7 @@ descriptions:
       Being a paid member gives you exclusive bonus benefits that showcase your support of SWIFT.
       These benefits include:"
     list:
+      - item: All free tier benefits.
       - item: Exclusive T-Shirts, Stickers, Webcam Covers & Other Goodies!
       - item: Paid Members will enter in raffles & giveaways.
       - item: Qualify for Prizes during CTF Competitions & Events.
