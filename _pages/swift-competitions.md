@@ -1,5 +1,5 @@
 ---
 layout: page
-title: Red vs Blue
+title: Swift Competitions
 ---
 {% include rvb.html %}
