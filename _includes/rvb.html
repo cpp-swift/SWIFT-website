@@ -2,6 +2,57 @@
     <div class="column is-8 is-offset-2">
         <div class="box">
             <div class="columns">
+                <div class="column">
+                    <h1 class="title with-margin is-1 has-text-centered">
+                        What is KotH?
+                    </h1>
+                    <p>
+                        King of the Hill (KotH) is a cybersecurity competition that combines network assessment and defense strategies into a single event. 
+                    </p>
+                    <p>
+                        Compete for control over infrastructure and the critical services hosted on them. 
+                    </p>
+                    <p>
+                        Secure points by planting your team flag on the machines. Harden the machine to secure your team's presence.
+                        You and 3 others must decide how best to use your time.
+                    </p>
+                </div>
+                <div class="column is-one-half">
+                    <figure class="image">
+                        <img src="/assets/images/koth.png">
+                    </figure>
+                </div>
+            </div>
+            {% assign today_date = 'now' | date: '%s' %}
+            {% assign eventdate = site.data.competitions.koth[0].eventdate | date: '%s' %}
+            {% if site.data.competitions.koth[0].signuplink and today_date < eventdate %} <a href="{{ site.data.competitions.koth[0].signuplink }}"
+                class="button is-large is-info is-rounded is-uppercase has-text-weight-normal is-fullwidth">
+                Sign up!
+                </a>
+                {% endif %}
+        </div>
+        <div class="box">
+            <h1 class="title with-margin is-1 has-text-centered">
+                How to Play
+            </h1>
+            <p>
+                <strong>Overview:</strong> 
+                There are two main tasks in KotH: plant your flag; secure your foothold. 
+                The team with the most points at the end wins!
+            </p>
+            <p>
+                <strong>Establishing Foothold:</strong> 
+                You will be given a range of IP addresses to scan and attack. Each machine will be vulnerable in a different way.
+                Attacks range from anonymous credentials and CVEs, to web application vulnerabilities and brute forcing.
+                Once in, find the flag file and replace it with your own.
+            </p>
+            <p>
+                <strong>Securing your Position:</strong>
+                Any machine you have a foothold on is vulnerable to being taken over. Secure the machines you can to remain on top.
+            </p>
+        </div>
+        <div class="box">
+            <div class="columns">
                 <div class="column is-one-half">
                     <h1 class="title with-margin is-1 has-text-centered">
                         What is RvB?
@@ -14,7 +65,7 @@
                         red team from taking down your servers and services.
                     </p>
                     <p>
-                        SWIFT's semesterly cybersecurity competition teaches skills in IT,
+                        SWIFT's RvB teaches skills in IT,
                         system administration, business, and much more. In RvB, participants take the
                         seat of an incident response team responsible for defending a company's network of computers
                         against a real-time threat. 
@@ -27,8 +78,8 @@
                 </div>
             </div>
             {% assign today_date = 'now' | date: '%s' %}
-            {% assign eventdate = site.data.rvb.eventdate | date: '%s' %}
-            {% if site.data.rvb.signuplink and today_date < eventdate %} <a href="{{ site.data.rvb.signuplink }}"
+            {% assign eventdate = site.data.competitions.rvb[0].eventdate | date: '%s' %}
+            {% if site.data.competitions.rvb[0].signuplink and today_date < eventdate %} <a href="{{ site.data.competitions.rvb[0].signuplink }}"
                 class="button is-large is-info is-rounded is-uppercase has-text-weight-normal is-fullwidth">
                 Sign up!
                 </a>
