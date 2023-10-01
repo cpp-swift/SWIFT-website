@@ -425,3 +425,11 @@ $message-body-padding: 1.25em 1.5em !default;
         justify-content: center;
     }
 }
+
+#tab-content > div {
+    display: none;
+}
+
+#tab-content div.active {
+    display: block;
+}

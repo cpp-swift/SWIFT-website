@@ -1,0 +1,131 @@
+{% assign comps = site.data.competitions.competitions %}
+{% assign competitions = site.data.competitions.featured %}
+{% for c in comps %}
+{% assign competitions = competitions | append: "," | append: c.name %}
+{% endfor %}
+{% assign competitions = competitions | split: "," | uniq %}
+<div class="columns">
+    <div class="column is-8 is-offset-2">
+        <div class="tabs is-centered is-toggle">
+            <ul class="ml-0 is-flex is-flex-direction-row" id="tabs">
+                {% for c in competitions%}
+                {% for comp in comps %}
+                {% if c == comp.name %}
+                <li {% if comp.name == competitions.first %}class="is-active"{% endif %} data-tab="{{ comp.name }}">
+                    <a>
+                        <span class="icon is-small"><i class="fas {{ comp.fa-icon }}" aria-hidden="true"></i></span>
+                        <span>{{ comp.name }}</span>
+                    </a>
+                </li>
+                {% endif %}
+                {% endfor %}
+                {% endfor %}
+            </ul>
+          </div>
+          <div id="tab-content">
+        {% for c in competitions %}
+        {% for competition in comps %}
+            {% if c == competition.name %}
+            <div {% if competition.name == competitions.first %}class="active"{% endif %} data-content="{{ competition.name }}">
+            {% if competition.description %}
+                <div class="box">
+                    <div class="columns">
+                        <div class="column">
+                            <h1 class="title with-margin is-1 has-text-centered">
+                                {{ competition.description.title }}
+                            </h1>
+                            {% for line in competition.description.lines %}
+                            <p>{{ line.paragraph }}</p>
+                            {% endfor %}
+                        </div>
+                        {% if competition.description.picture %}
+                        <div class="column is-one-half">
+                            <figure class="image">
+                                <img src="{{ competition.description.picture }}">
+                            </figure>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% assign today_date = 'now' | date: '%s' %}
+                    {% assign eventdate = competition.eventdate | date: '%s' %}
+                    {% if competition.signuplink and today_date < eventdate %} 
+                        <a href="{{ competition.signuplink }}"
+                            class="button is-large is-info is-rounded is-uppercase has-text-weight-normal is-fullwidth">
+                            Sign up!
+                        </a>
+                    {% endif %}
+                </div>
+            {% endif %}
+
+            {% if competition.howtoplay %}
+                <div class="box">
+                    <h1 class="title with-margin is-1 has-text-centered">
+                        How to Play
+                    </h1>
+                    {% for line in competition.howtoplay.lines %}
+                        <p>{% if line.title %}<strong>{{ line.title}}: </strong>{% endif %}
+                        {{ line.paragraph }}
+                        </p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            {% if competition.history %}
+                <div class="box">
+                    <h1 class="title with-margin is-1 has-text-centered">
+                        History
+                    </h1>
+                    {% for line in competition.history.lines %}
+                        <p>{% if line.title %}<strong>{{ line.title}}: </strong>{% endif %}
+                        {{ line.paragraph }}
+                        </p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            </div>
+            {% endif %}
+        {% endfor %}
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+<script>
+const TABS = [...document.querySelectorAll('#tabs li')];
+const CONTENT = [...document.querySelectorAll('#tab-content div')];
+const CONTENT_ACTIVE_CLASS = 'active';
+const TAB_ACTIVE_CLASS = 'is-active';
+
+function initTabs() {
+    TABS.forEach((tab) => {
+      tab.addEventListener('click', (e) => {
+        let selected = tab.getAttribute('data-tab');
+        updateActiveTab(tab);
+        updateActiveContent(selected);
+      })
+    })
+}
+
+function updateActiveTab(selected) {
+  TABS.forEach((tab) => {
+    if (tab && tab.classList.contains(TAB_ACTIVE_CLASS)) {
+      tab.classList.remove(TAB_ACTIVE_CLASS);
+    }
+  });
+  selected.classList.add(TAB_ACTIVE_CLASS);
+}
+
+function updateActiveContent(selected) {
+  CONTENT.forEach((item) => {
+    if (item && item.classList.contains(CONTENT_ACTIVE_CLASS)) {
+      item.classList.remove(CONTENT_ACTIVE_CLASS);
+    }
+    let data = item.getAttribute('data-content');
+    if (data === selected) {
+      item.classList.add(CONTENT_ACTIVE_CLASS);
+    }
+  });
+}
+
+initTabs();
+</script>
