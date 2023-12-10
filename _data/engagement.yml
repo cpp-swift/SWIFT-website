@@ -8,13 +8,12 @@ descriptions:
       students
       in the field to give our members an insight to the professional world of
       technology. 
-  - title: Red vs Blue
+  - title: Club Competitions
     description:
-      Red vs. Blue (RvB) is a SWIFT-run cybersecurity competition which teaches business, 
-      IT, and system administration skills by putting participants in the seat of an 
-      incident response team defending a company's network of computers against a real-time threat.
-      Sound fun?
-    link: /cyber-challenge
+      Engage in fun cybersecurity competitions that SWIFT puts together to test what you've learned. 
+      We're always cooking something new. Compete with or against your friends. 
+      Sound fun? Read more about the types of competitions we've done in the past.
+    link: /swift-competitions
   - title: Tech Symposium
     description:
       Tech Symposium (TS) is a student-led conference that celebrates the different
