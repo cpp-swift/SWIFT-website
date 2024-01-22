@@ -16,7 +16,7 @@
         </div>
 
         <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
-        <div class="navbar-menu has-background-black" id="navbar-menu">
+        <div class="navbar-menu" id="navbar-menu">
             <!-- navbar items | left side -->
             <!-- <div class="navbar-start">
             </div> -->
@@ -29,7 +29,10 @@
                 {% include dropdown-events.html %}
 
                 <a class="navbar-item" href="#contact">CONTACT</a>
-                <div style="display: flex; align-items: center">
+                <div style="display: flex; align-items: center; padding: 0.5em;">
+                    <a class="navbar-item button" style="background-color: #ffab40; border: none; opacity: 1;" href="{{site.url}}{{site.baseurl}}/support">Sponsor Us!</a>
+                </div>
+                <div style="display: flex; align-items: center; padding: 0.5em;">
                     <a class="navbar-item button is-success" href="{{site.url}}{{site.baseurl}}/join">BECOME A
                         MEMBER</a>
                 </div>
