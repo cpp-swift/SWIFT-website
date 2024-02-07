@@ -4,74 +4,83 @@
         <a class="has-text-white" onclick="window.scroll(0,0)">BACK TO TOP</a>
     </div> -->
     <!--Footer Main Section-->
-    <div class="has-background-black">
-        <div class="container columns">
-            <!--Link Section-->
-            <div class="column has-text-white">
-                <h3>Email us your question</h3>
-                <a id="contact-button" href="mailto:{{site.email}}"
-                    class="button is-info is-rounded is-uppercase has-text-weight-normal has-text-weight-semibold column has-text-white"
-                    target="_blank">
-                    <p><i class="fas fa-envelope"></i> Send us an Email</p>
-                </a>
-                <!-- {% for sitepage in site.html_pages offset: 4 %}
-                {% unless sitepage.url == '/' limit: 2 %}
-                <li>
-                    <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
-                </li>
-                {% endunless %}
-                {% endfor %} -->
-                <!-- <li>
-                    <a target="_blank" href="{{site.url}}{{site.baseurl}}/feed.xml">Subscribe via RSS</a>
-                </li> -->
+    <div class="has-background-black" id="contact">
+        <div class="is-flex is-flex-wrap-wrap is-flex-direction-row is-justify-content-space-around p-6 has-text-white" id="socials">
+            <div class="mb-4">
+                <h3 class="has-text-grey-light">
+                    Contact
+                </h3>
+                <div>
+                    <span><i class="fas fa-envelope"></i></span>
+                    <a id="contact-button" href="mailto:{{site.email}}" class="has-text-white" target="_blank">
+                        {{site.email}}
+                    </a>
+                </div>
+                <div>
+                    <span><i class="fa-solid fa-location-dot"></i></span> SWIFT @ Cal Poly Pomona
+                    3801 West Temple Avenue
+                    Pomona, California 91768
+                </div>
             </div>
-
-            <div class="column has-text-white" id="contact">
-                <h3>... or connect with us on our social media!</h3>
+            <div class="is-flex is-flex-direction-column">
+                <h3 class="has-text-grey-light">... or connect with us on our social media!</h3>
                 <br>
                 {% unless site.facebook_username == %}
-                <a href="https://discord.gg/{{site.discord_server}}" target="_blank" class="has-text-white"><i
-                        class="fab fa-discord"></i> Discord</a>
+                <a href="https://discord.gg/{{site.discord_server}}" target="_blank" class="has-text-white">
+                    <span><i class="fab fa-discord"></i></span> Discord
+                </a>
                 {% endunless %}
                 {% unless site.facebook_username == %}
-                <a href="http://www.facebook.com/{{site.facebook_username}}" target="_blank" class="has-text-white"><i
-                        class="fab fa-facebook"></i> Facebook</a>
+                <a href="http://www.facebook.com/{{site.facebook_username}}" target="_blank" class="has-text-white">
+                    <span><i class="fab fa-facebook"></i></span> Facebook
+                </a>
                 {% endunless %}
                 {% unless site.twitter_username == %}
                 <a href="https://twitter.com/intent/user?screen_name={{site.twitter_username}}" target="_blank"
-                    class="has-text-white"><i class="fab fa-twitter"></i> Twitter</a>
+                    class="has-text-white">
+                    <span><i class="fab fa-twitter"></i></span> Twitter
+                </a>
                 {% endunless %}
                 {% unless site.instagram_username == %}
-                <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-white"><i
-                        class="fab fa-instagram"></i> Instagram</a>
+                <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-white">
+                    <span><i class="fab fa-instagram"></i></span> Instagram
+                </a>
                 {% endunless %}
                 {% unless site.linkedin_username == %}
-                <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank"
-                    class="has-text-white"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-white">
+                    <span><i class="fab fa-linkedin"></i></span> LinkedIn
+                </a>
                 {% endunless %}
                 {% unless site.github_username == %}
-                <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-white"><i
-                        class="fab fa-github"></i> GitHub</a>
+                <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-white">
+                    <span><i class="fab fa-github"></i></span> GitHub
+                </a>
                 {% endunless %}
                 {% unless site.youtube_channel_id == %}
                 <a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank"
-                    class="has-text-white"><i class="fab fa-youtube"></i> YouTube</a>
+                    class="has-text-white">
+                    <span><i class="fab fa-youtube"></i></span> YouTube
+                </a>
                 {% endunless %}
                 {% unless site.reddit_username == %}
-                <a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank" class="has-text-white"><i
-                        class="fab fa-reddit"></i> Reddit</a>
+                <a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank" class="has-text-white">
+                    <span><i class="fab fa-reddit"></i></span> Reddit
+                </a>
                 {% endunless %}
                 {% unless site.behance_username == %}
-                <a href="http://www.behance.com/{{site.behance_username}}" target="_blank" class="has-text-white"><i
-                        class="fab fa-behance"></i> Behance</a>
+                <a href="http://www.behance.com/{{site.behance_username}}" target="_blank" class="has-text-white">
+                    <span><i class="fab fa-behance"></i></span> Behance
+                </a>
                 {% endunless %}
                 {% unless site.dribbble_username == %}
-                <a href="http://www.dribbble.com/{{site.dribbble_username}}" target="_blank" class="has-text-white"><i
-                        class="fab fa-dribbble"></i> Dribble</a>
+                <a href="http://www.dribbble.com/{{site.dribbble_username}}" target="_blank" class="has-text-white">
+                    <span><i class="fab fa-dribbble"></i></span> Dribble
+                </a>
                 {% endunless %}
                 {% unless site.spotify_username == %}
-                <a href="http://open.spotify.com/user/{{site.spotify_username}}" target="_blank"
-                    class="has-text-white"><i class="fab fa-spotify"></i> Spotify</a>
+                <a href="http://open.spotify.com/user/{{site.spotify_username}}" target="_blank" class="has-text-white">
+                    <span><i class="fab fa-spotify"></i></span> Spotify
+                </a>
                 {% endunless %}
             </div>
         </div>

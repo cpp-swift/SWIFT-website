@@ -5,39 +5,33 @@
             <h1 class="title with-margin is-1 has-text-centered">
                 {{ section.title }}
             </h1>
-            <div class="columns">
-                <div class="column is-centered" style="padding: 2em 3em">
-                    <p style="text-align: center;">
-                        {{ section.description }}
-                    </p>
-                    {% if section.list %}
-                    <div style="display: flex; padding: 0 calc(50% - 15em);">
-                        <ul style="text-align: left;">
-                            {% for item in section.list %}
-                            <li>{{item.item}}</li>
-                            {% endfor %}
-                        </ul>
-                    </div>
+            <p>
+                {{ section.description }}
+                {% if section.list %}
+            <ul>
+                {% for item in section.list %}
+                <li>{{item.item}}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            </p>
+            {% if section.image %}
+            <figure class="image">
+                <img src="{{section.image}}" alt="{{section.title}}">
+            </figure>
+            {% endif %}
+            {% if section.link %}
+            <div class="is-flex is-flex-direction-row is-justify-content-center is-centered">
+                <a href="{{ section.link }}"
+                    class="button is-medium is-info is-rounded is-uppercase has-text-weight-normal">
+                    {% if section.link-text %}
+                    {{ section.link-text }}
+                    {% else %}
+                    See more
                     {% endif %}
-                    {% if section.image %}
-                    <div class="is-centered has-text-centered">
-                        <img src="{{ section.image }}" alt="Section Image">
-                    </div>
-                    {% endif %}
-                    {% if section.link %}
-                    <div class="is-centered has-text-centered"> 
-                        <a href="{{ section.link }}"
-                            class="button is-medium is-info is-rounded is-uppercase has-text-weight-normal">
-                            {% if section.link-text %}
-                            {{ section.link-text }}
-                            {% else %}
-                            See more
-                            {% endif %}
-                        </a>
-                    </div>
-                    {% endif %}
-                </div>
+                </a>
             </div>
+            {% endif %}
         </div>
         {% endfor %}
     </div>

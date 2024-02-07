@@ -3,7 +3,7 @@
 @import "main.scss";
 
 #navbar {
-    background: rgba(0,0,0,0.85);
+    background: rgba(0,0,0,1);
 }
 
 .is-active {
@@ -83,28 +83,6 @@ a.navbar-item.is-active {
     a {
         min-width: 25vmax;
         margin: 0.5rem;
-    }
-}
-
-#contact {
-    #contact-button {
-        margin: 0.5rem auto;
-        display: flex;
-        justify-content: center;
-    }
-
-    svg {
-        transition: all 0.15s ease-in-out;
-        margin: auto 0.75vmax;
-
-        &:hover {
-            transform: scale(1.30);
-            filter: opacity(0.75);
-        }
-    }
-
-    hr {
-        background-color: black;
     }
 }
 
@@ -201,6 +179,9 @@ a.navbar-item.is-active {
 
 
 #footer {
+    div {
+        flex-grow: 1;
+    }
     #backtotop {
         transition: all 0.25s ease;
         width: 10rem;
@@ -212,38 +193,14 @@ a.navbar-item.is-active {
         }
     }
 
-    .container {
-        margin: auto;
-        padding: 1.5rem;
-        line-height: 1.25;
-
-        .column {
-            display: grid;
-            justify-content: center;
-
-            li {
-                list-style: circle;
-                list-style-position: outside;
-            }
-
-            a {
-                color: #7a7a7a;
-
-                &:hover {
-                    color: white;
-                }
-            }
-
-            figure {
-                border: 1.5px solid white;
-                border-radius: 50rem;
-                justify-content: center;
-                margin: auto;
-                transition: all 0.25s ease;
-                &:hover{
-                    transform: scale(1.15);
-                }
-            }
+    #socials {
+        span {
+            display: inline-block;
+            width: 20px;
+            margin-right: 5px;
+        }
+        > div {
+            max-width: 300px;
         }
     }
 
