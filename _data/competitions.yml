@@ -1,10 +1,10 @@
-featured: koth
+featured: rvb
 competitions:
   - name: rvb
     fa-icon: fa-sitemap
-    eventdate: "April 22, 2023"
-    eventtime: "1pm-4pm"
-    signuplink: https://forms.gle/UrBx4CRk6R4qkLkP7
+    eventdate: "April 13, 2024"
+    eventtime: "12pm-4pm"
+    signuplink: https://forms.gle/Cxfwtn9EPkQhc8u96
     description:
       title: What is RvB?
       picture: /assets/images/rvb.jpg
