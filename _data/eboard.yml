@@ -1,74 +1,70 @@
-year: 2023-2024
+year: 2024-2025
 eboard:
   - position: President
-    holder: Jacob Jayme
-    linkedin: https://www.linkedin.com/in/jacobjayme/
-    branch: President
-  - position: President
-    holder: Jessica Leung
-    linkedin: https://www.linkedin.com/in/jessicacleung/
-    branch: President
-  - position: Vice President of Internal
-    holder: Tanay Shah
-    linkedin: https://www.linkedin.com/in/tanay-v-shah/
-    branch: Internal
-  - position: Vice President of External
     holder: Sydney Duong
     linkedin: https://www.linkedin.com/in/sydneylduong/
-    branch: External
-  - position: Vice President of Operations
-    holder: Jimmy Peng
-    linkedin: https://www.linkedin.com/in/jimmy-peng-43bb89218/
-    branch: Operations
-  - position: Treasurer
-    holder: Casie Lundquist Emery
-    linkedin: https://www.linkedin.com/in/casielundquistemery/
-    branch: Treasurer
-  - position: Director of Membership
-    holder: Vincent Pastrana
-    linkedin: https://www.linkedin.com/in/vincent-pastrana/
-    branch: Internal
-  - position: Director of Mentorship
+    branch: President
+  - position: President
+    holder: Bill Luong
+    linkedin: https://www.linkedin.com/in/bill-luong/
+    branch: President
+  - position: Vice President of Internal
     holder: Kenneth Cher
     linkedin: https://www.linkedin.com/in/kenneth-cher-a809b1187/
     branch: Internal
+  - position: Vice President of External
+    holder: Zain Haideri
+    linkedin: https://www.linkedin.com/in/zain-haideri-481175275/
+    branch: External
+  - position: Vice President of Operations
+    holder: Maxwell Caron
+    linkedin: https://www.linkedin.com/in/maxwell-caron-6194a7290/
+    branch: Operations
+  - position: Director of Membership
+    holder: Mathew Cortez
+    linkedin: https://www.linkedin.com/in/mathew-cortez-75770b195/
+    branch: Internal
+  - position: Director of Membership
+    holder: Elias Alvarez
+    linkedin: https://www.linkedin.com/in/elias-alvarez8/
+    branch: Internal
   - position: Director of Marketing
-    holder: Palmer Du
-    linkedin: https://www.linkedin.com/in/palmer-du/
+    holder: Joshua Venturina
+    linkedin: https://www.linkedin.com/in/javenturina/
     branch: Internal
   - position: Graphic Designer
     holder: Alessandra Gonzalez
     linkedin: https://www.linkedin.com/in/alessandra-gonzalez/
     branch: Internal
   - position: Swintern Lead
-    holder: Bill Luong
-    linkedin: https://www.linkedin.com/in/bill-luong/
+    holder: Jerry Solis
+    linkedin: https://www.linkedin.com/in/gerardo-solis-93086493/
     branch: Internal
   - position: Community Outreach Coordinator
-    holder: Simon Nguyen
-    linkedin: https://www.linkedin.com/in/simondnguyen/
+    holder: Natalie Cano
+    linkedin: https://www.linkedin.com/in/nataliecano/
     branch: External
   - position: Alumni Relations Coordinator
-    holder: Meghan Nguyen
-    linkedin: https://www.linkedin.com/in/meghannguyen/
-    branch: External
-  - position: Sponsorship Chair
-    holder: Clemence Yi
-    linkedin: https://www.linkedin.com/in/clemence-jun-yi/
-    branch: External
-  - position: Tech Symposium Chair
-    holder: Andrew Gravino
-    linkedin: https://www.linkedin.com/in/andrewgravino/
+    holder: Natalie Tran
+    linkedin: https://www.linkedin.com/in/natalie-bn-tran/
     branch: External
   - position: Director of Academy
-    holder: Dylan Tran
-    linkedin: https://www.linkedin.com/in/susdt/
+    holder: Alex Chacon
+    linkedin: https://www.linkedin.com/in/alexmchacon/
+    branch: Operations    
+  - position: Director of Academy
+    holder: Ryan Miller
+    linkedin: https://www.linkedin.com/in/ryan-miller-460578272/
     branch: Operations
   - position: Director of Infrastructure
-    holder: Derrick Tran
-    linkedin: https://www.linkedin.com/in/derrickttran/
+    holder: Rachel Decastro
+    linkedin: https://www.linkedin.com/in/rachel-decastro/
     branch: Operations
   - position: Director of Competitions
-    holder: Marshall Ung
-    linkedin: https://www.linkedin.com/in/marshall-j-ung/
+    holder: Dylan Michalak
+    linkedin: https://www.linkedin.com/in/dwmichalak/
+    branch: Operations
+  - position: Director of Competitions
+    holder: Clemence Yi
+    linkedin: https://www.linkedin.com/in/clemence-jun-yi/
     branch: Operations
