@@ -82,6 +82,11 @@
                     <span><i class="fab fa-spotify"></i></span> Spotify
                 </a>
                 {% endunless %}
+                {% unless site.alumni_form == %}
+                <a href="https://forms.gle/{{site.alumni_form}}" target="_blank" class="has-text-white">
+                    <span><i class="fa-solid fa-user-graduate"></i></span> Alumni
+                </a>
+                {% endunless %}
             </div>
         </div>
     </div>
