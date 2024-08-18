@@ -30,8 +30,8 @@ descriptions:
       - item: Certification Reimbursement (TBD)*
       - item: Graduation Stoles (Graduating students only)*
       - item: And more!
-    link: https://www.eventbrite.com/e/swift-spring-2023-paid-membership-registration-523782135467
-    link-text: Buy Now
+    #link: https://www.eventbrite.com/e/swift-spring-2023-paid-membership-registration-523782135467
+    #link-text: Buy Now
   - title: SWIFT Pals
     description:
       SWIFT Pals is a unique mentorship program with a focus on community building that
@@ -41,5 +41,5 @@ descriptions:
       own RvB, Hivestorm, NCL under the guidance of their mentors.
       You do not have to be a paid member to apply for Pals.
     image: /assets/images/pals.png
-    link: https://docs.google.com/forms/d/e/1FAIpQLScgcsnL_4e1BHDvJ8rFd2Q13pHSroYPkFFfvHO2C1PzkRFbWw/viewform
-    link-text: Sign up
+    #link: https://docs.google.com/forms/d/e/1FAIpQLScgcsnL_4e1BHDvJ8rFd2Q13pHSroYPkFFfvHO2C1PzkRFbWw/viewform
+    #link-text: Sign up
