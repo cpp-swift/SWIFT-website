@@ -3,8 +3,8 @@ columns: 2
 descriptions:
   - title: Help Support SWIFT
     description: SWIFT is always looking for ways to improve our members' experience. Your support helps us provide more opportunities for our members to learn and grow by directly funding our weekly workshops and meetings, annual competitions, mentorship programs, and more. Check out our sponsorship packet to learn more about how you can help!
-    link: https://docs.google.com/document/d/1N3kLs7-x8FqGlFaXyCj02zcd44_qv_UQcAeFEuDE3yM/edit?usp=sharing 
-    link-text: 2023-24 Sponsorship Packet
+    #link: https://docs.google.com/document/d/1N3kLs7-x8FqGlFaXyCj02zcd44_qv_UQcAeFEuDE3yM/edit?usp=sharing 
+    #link-text: 2023-24 Sponsorship Packet
   - title: Sponsorship Benefits
     description: "We are beyond grateful for your support, and would love to help you get the most out of your sponsorship. We offer a variety of benefits to our sponsors, including:"
     list:
@@ -13,7 +13,7 @@ descriptions:
       - item: Involvement in our competition planning and execution
       - item: Tabling at SWIFT events
       - item: And more!
-    link: mailto:slduong@cpp.edu,jcleung@cpp.edu,jrjayme@cpp.edu
+    link: mailto:slduong@cpp.edu
     link-text: Contact
   - title: Sponsor
     description: "If you are interested in sponsoring SWIFT, please visit the link below. Thank you so much for your support!"
