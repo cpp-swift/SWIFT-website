@@ -72,3 +72,8 @@ hr {
         }
     }
 }
+
+/* Orange buttons */
+$orange: #ffab40;
+$orange-invert: findColorInvert($orange);
+$custom-colors: ("orange": ($orange, $orange-invert));
