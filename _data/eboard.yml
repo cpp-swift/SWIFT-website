@@ -1,70 +1,29 @@
-year: 2024-2025
+year: 2025-2026
 eboard:
-  - position: President
-    holder: Sydney Duong
-    linkedin: https://www.linkedin.com/in/sydneylduong/
-    branch: President
-  - position: President
-    holder: Bill Luong
-    linkedin: https://www.linkedin.com/in/bill-luong/
-    branch: President
-  - position: Vice President of Internal
-    holder: Kenneth Cher
-    linkedin: https://www.linkedin.com/in/kenneth-cher-a809b1187/
-    branch: Internal
-  - position: Vice President of External
-    holder: Zain Haideri
-    linkedin: https://www.linkedin.com/in/zain-haideri-481175275/
-    branch: External
-  - position: Vice President of Operations
-    holder: Maxwell Caron
-    linkedin: https://www.linkedin.com/in/maxwell-caron-6194a7290/
-    branch: Operations
-  - position: Director of Membership
-    holder: Mathew Cortez
-    linkedin: https://www.linkedin.com/in/mathew-cortez-75770b195/
-    branch: Internal
-  - position: Director of Membership
-    holder: Elias Alvarez
-    linkedin: https://www.linkedin.com/in/elias-alvarez8/
-    branch: Internal
+  - position: Co-President
+    holder: Molly Chen
+    linkedin: https://www.linkedin.com/in/mollylchen/
+  - position: Co-President
+    holder: Jessica Setiadhi
+    linkedin: https://www.linkedin.com/in/jessica-setiadhi/
   - position: Director of Marketing
-    holder: Joshua Venturina
-    linkedin: https://www.linkedin.com/in/javenturina/
-    branch: Internal
-  - position: Graphic Designer
-    holder: Alessandra Gonzalez
-    linkedin: https://www.linkedin.com/in/alessandra-gonzalez/
-    branch: Internal
+    holder: Alex Eng
+    linkedin: https://www.linkedin.com/in/alexandereng47/
+  - position: Alumni Coordinator
+    holder: Medha Swarnachandrabalaji
+    linkedin: https://www.linkedin.com/in/medha-swarnachandrabalaji/
+  - position: Director of Membership
+    holder: Anson Ng
+    linkedin: https://www.linkedin.com/in/anson-ng
+  - position: Co-Director of Competitions
+    holder: Ryan Wong
+    linkedin: https://www.linkedin.com/in/ryan-wong14705/
+  - position: Co-Director of Competitions
+    holder: Josh Hung
+    linkedin: https://www.linkedin.com/in/jrhung/
   - position: Swintern Lead
-    holder: Jerry Solis
-    linkedin: https://www.linkedin.com/in/gerardo-solis-93086493/
-    branch: Internal
-  - position: Community Outreach Coordinator
-    holder: Natalie Cano
-    linkedin: https://www.linkedin.com/in/nataliecano/
-    branch: External
-  - position: Alumni Relations Coordinator
-    holder: Natalie Tran
-    linkedin: https://www.linkedin.com/in/natalie-bn-tran/
-    branch: External
-  - position: Director of Academy
-    holder: Alex Chacon
-    linkedin: https://www.linkedin.com/in/alexmchacon/
-    branch: Operations    
-  - position: Director of Academy
-    holder: Ryan Miller
-    linkedin: https://www.linkedin.com/in/ryan-miller-460578272/
-    branch: Operations
-  - position: Director of Infrastructure
-    holder: Rachel Decastro
-    linkedin: https://www.linkedin.com/in/rachel-decastro/
-    branch: Operations
-  - position: Director of Competitions
-    holder: Dylan Michalak
-    linkedin: https://www.linkedin.com/in/dwmichalak/
-    branch: Operations
-  - position: Director of Competitions
-    holder: Clemence Yi
-    linkedin: https://www.linkedin.com/in/clemence-jun-yi/
-    branch: Operations
+    holder: Daniel Wang
+    linkedin: https://www.linkedin.com/in/danielwang7/
+  - position: Treasurer
+    holder: Yuri Hyder
+    linkedin: https://www.linkedin.com/in/yuri-hyder-36188525a/
