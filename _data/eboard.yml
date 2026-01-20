@@ -6,9 +6,6 @@ eboard:
   - position: Co-President
     holder: Jessica Setiadhi
     linkedin: https://www.linkedin.com/in/jessica-setiadhi/
-  - position: Director of Marketing
-    holder: Alex Eng
-    linkedin: https://www.linkedin.com/in/alexandereng47/
   - position: Alumni Relations Coordinator
     holder: Medha Swarnachandrabalaji
     linkedin: https://www.linkedin.com/in/medha-swarnachandrabalaji/
@@ -24,6 +21,12 @@ eboard:
   - position: Competitions Officer
     holder: Ian Eusebio
     linkedin: https://www.linkedin.com/in/ian-gabriel-eusebio/
+  - position: Competitions Officer
+    holder: Alex Eng
+    linkedin: https://www.linkedin.com/in/alexandereng47/
+  - position: Director of Marketing
+    holder: Roman Sailes
+    linkedin: https://www.linkedin.com/in/roman-sailes/
   - position: Swintern Lead
     holder: Daniel Wang
     linkedin: https://www.linkedin.com/in/danielwang7/
@@ -33,3 +36,4 @@ eboard:
   - position: Director of Infrastructure
     holder: Roman Arreguin
     linkedin: https://www.linkedin.com/in/roman-arreguin-8962b230b/
+    
